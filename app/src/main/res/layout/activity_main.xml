@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextDolares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dólares" />
+
+    <EditText
+        android:id="@+id/editTextTasaCambio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tasa de cambio" />
+
+    <!-- Botón para realizar la conversión -->
+    <Button
+        android:id="@+id/buttonConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir a Bolivianos" />
+
+    <!-- Botón para realizar la conversión -->
+    <Button
+        android:id="@+id/buttonConvertir2"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="@string/convertir_a_dolares" />
+
+    <!-- ListView para mostrar el resultado -->
+    <ListView
+        android:id="@+id/listViewResultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
